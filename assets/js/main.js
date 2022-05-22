@@ -22,20 +22,22 @@ L.tileLayer(
 const markerOptions = {
   title: 'Universitas Lambung Mangkurat - Kampus I Banjarmasin',
 };
-L.marker(COORDINATES_LAMBUNG_MANGKURAT, markerOptions).addTo(map);
+const marker = L.marker(COORDINATES_LAMBUNG_MANGKURAT, markerOptions).addTo(
+  map
+);
 
 // Position of zoom control
 const zoomPosition = ['verticalcenter', 'left'];
 // Create additional Control placeholders
 function addControlPlaceholders(map) {
   var corners = map._controlCorners,
-      l = 'leaflet-',
-      container = map._controlContainer;
+    l = 'leaflet-',
+    container = map._controlContainer;
 
   function createCorner(vSide, hSide) {
-      var className = l + vSide + ' ' + l + hSide;
+    var className = l + vSide + ' ' + l + hSide;
 
-      corners[vSide + hSide] = L.DomUtil.create('div', className, container);
+    corners[vSide + hSide] = L.DomUtil.create('div', className, container);
   }
 
   createCorner(...zoomPosition);
@@ -45,5 +47,9 @@ addControlPlaceholders(map);
 // Change the position of the Zoom Control to a newly created placeholder.
 map.zoomControl.setPosition(zoomPosition.join(''));
 
-// You can also put other controls in the same placeholder.
-// L.control.scale({position: zoomPosition.join('')}).addTo(map);
+// Add popup 'ULM Banjarmasin' to marker
+marker
+  .bindPopup(
+    '<b>ULM Banjarmasin!</b><br>Universitas Lambung Mangkurat - Kampus I Banjarmasin.'
+  )
+  .openPopup();
