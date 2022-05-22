@@ -1,9 +1,9 @@
 <?php
 
-$HOST = getenv('HOST') ?: 'localhost';
-$USERNAME = getenv('USERNAME') ?: 'root';
-$PASSWORD = getenv('PASSWORD') ?: 'root';
-$DBNAME = getenv('DBNAME') ?: 'geopark';
+$HOST = $_ENV['HOST'] ? $_ENV['HOST'] : 'localhost';
+$USERNAME = $_ENV['USERNAME'] ? $_ENV['USERNAME'] : 'root';
+$PASSWORD = $_ENV['PASSWORD'] ? $_ENV['PASSWORD'] : '';
+$DBNAME = $_ENV['DBNAME'] ? $_ENV['DBNAME'] : 'geopark';
 
 $koneksi = new mysqli($HOST, $USERNAME, $PASSWORD, $DBNAME);
 

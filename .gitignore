@@ -1,6 +1,6 @@
 # DIR
 node_modules/
-vendors/
+vendor/
 
 # FILE
 .env
