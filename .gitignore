@@ -1,0 +1,6 @@
+# DIR
+node_modules/
+vendors/
+
+# FILE
+.env
