@@ -36,7 +36,6 @@ $dotenv->load();
 
   <!-- Local Modules -->
   <link rel="stylesheet" href="assets/css/main.css">
-  <script src="assets/js/main.js" defer></script>
 </head>
 
 <body id="page-top">
