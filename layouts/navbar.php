@@ -1,5 +1,5 @@
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
   <div class="container">
     <a class="navbar-brand" href="./#page-top">
       <h1 class="text-warning h4 m-0">Geopark Info</h1>
@@ -18,6 +18,7 @@
             <a class="dropdown-item" href="#">Pendidikan</a>
             <a class="dropdown-item" href="#">Fitur</a>
             <a class="dropdown-item" href="?page=peta">Peta</a>
+            <a class="dropdown-item" href="?page=3d">Objek 3D</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Cari Informasi</a>
           </div>
