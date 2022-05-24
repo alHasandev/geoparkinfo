@@ -1,0 +1,27 @@
+{
+  "name": "geoparkinfo",
+  "version": "1.0.0",
+  "description": "Aplikasi informasi geografis Universitas Lambung Mangkurat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alHasandev/geoparkinfo.git"
+  },
+  "keywords": [
+    "maps",
+    "gis",
+    "3dmap"
+  ],
+  "author": "alhasandev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alHasandev/geoparkinfo/issues"
+  },
+  "homepage": "https://github.com/alHasandev/geoparkinfo#readme",
+  "dependencies": {
+    "three": "^0.140.2"
+  }
+}
