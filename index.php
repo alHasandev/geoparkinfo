@@ -31,6 +31,14 @@ $dotenv->load();
   <!-- Make sure you put this AFTER Leaflet's CSS -->
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin="" defer></script>
 
+  <!-- GLTF Viewer -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/gltf-viewer/style.e308ff8e.css" />
+  <script src="assets/gltf-viewer/app.a6a4d504.js"></script>
+  <script src="assets/gltf-viewer/style.e308ff8e.js"></script>
+  <!-- Custom GLTF Viewer -->
+  <link rel="stylesheet" href="assets/css/main.gltf-viewer.css">
+
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="assets/css/styles.css" rel="stylesheet" />
 

@@ -1,0 +1,46 @@
+.gui-wrap {
+  top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .gui-wrap {
+    top: 24px;
+  }
+}
+
+/* Hide refresh button if model not yet loaded */
+.custom-handler {
+  display: none;
+}
+
+main.wrap.model-loaded .custom-handler {
+  display: inline-block;
+}
+
+.refresh-gltf-viewer {
+  position: absolute;
+  bottom: 4rem;
+  right: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgb(255,200,0);
+  border: 1px solid rgb(255,200,0);
+  color: rgb(53,56,98);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.refresh-gltf-viewer:hover {
+  background-color: rgb(226, 179, 8);
+}
+
+.refresh-gltf-viewer img {
+  width: 100%;
+  transition: 300ms;
+}
+
+.refresh-gltf-viewer:hover img {
+  transform: scale(0.9) rotate(180deg);
+  transition: 500ms;
+}
