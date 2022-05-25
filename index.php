@@ -7,6 +7,19 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+// Control Layouts
+$topLayouts = [
+  'layouts/navbar.php',
+];
+$bottomLayouts = [
+  'layouts/footer.php',
+];
+
+// Control Page
+define('PAGE_DIR', 'pages');
+$page = @$_GET['page'] ?: 'home';
+$file = @$_GET['file'] ?: 'index';
+
 ?>
 
 <!DOCTYPE html>
@@ -32,12 +45,13 @@ $dotenv->load();
   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin="" defer></script>
 
   <!-- GLTF Viewer -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/gltf-viewer/style.e308ff8e.css" />
-  <script src="assets/gltf-viewer/app.a6a4d504.js"></script>
-  <script src="assets/gltf-viewer/style.e308ff8e.js"></script>
-  <!-- Custom GLTF Viewer -->
-  <link rel="stylesheet" href="assets/css/main.gltf-viewer.css">
+  <?php if ($page === 'gltf-viewer') : ?>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/gltf-viewer/style.e308ff8e.css" />
+    <script src="assets/gltf-viewer/app.a6a4d504.js"></script>
+    <script src="assets/gltf-viewer/style.e308ff8e.js"></script>
+    <link rel="stylesheet" href="assets/css/main.gltf-viewer.css">
+  <?php endif; ?>
 
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="assets/css/styles.css" rel="stylesheet" />
@@ -50,19 +64,6 @@ $dotenv->load();
 
   <!-- Content -->
   <?php
-
-  // Control Layouts
-  $topLayouts = [
-    'layouts/navbar.php',
-  ];
-  $bottomLayouts = [
-    'layouts/footer.php',
-  ];
-
-  // Control Page
-  define('PAGE_DIR', 'pages');
-  $page = @$_GET['page'] ?: 'home';
-  $file = @$_GET['file'] ?: 'index';
 
   // Include top layouts
   foreach ($topLayouts as $layout) {
