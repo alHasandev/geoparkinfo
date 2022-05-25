@@ -23,6 +23,11 @@
             <a class="dropdown-item" href="#">Cari Informasi</a>
           </div>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=gltf-viewer">
+            GLTF Viewer
+          </a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="example-dropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Kegiatan
