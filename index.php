@@ -30,11 +30,7 @@ $file = @$_GET['file'] ?: 'index';
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <meta http-equiv="Content-Security-Policy" content="
-      worker-src blob:; 
-      child-src blob: gap:;
-      img-src 'self' blob: data:;
-      default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <meta http-equiv="Content-Security-Policy" content="connect-src self * 'unsafe-inline' blob: data: gap:;">
   <title>Geopark Info - ULM Informasi Geografis</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />

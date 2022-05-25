@@ -39,7 +39,7 @@
   <div class="spinner"></div>
   <section class="custom-handler">
     <a href="?page=gltf-viewer" class="refresh-gltf-viewer">
-      <img src="https://api.iconify.design/material-symbols:refresh-rounded.svg" alt="refresh">
+      <img src="assets/icons/MaterialSymbolsRefreshRounded.svg" alt="refresh">
     </a>
   </section>
 </main>
