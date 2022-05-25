@@ -168,6 +168,6 @@
       </tbody>
     </table>
   </script>
-<script defer="" data-domain="gltf-viewer.donmccurdy.com" src="https://plausible.io/js/plausible.js"></script>
+<script defer="" data-domain="https://geoparkinfo.alhasandev.com" src="https://plausible.io/js/plausible.js"></script>
 
 <script src="assets/js/main.gltf-viewer.js" type="module" defer></script>

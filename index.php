@@ -30,7 +30,7 @@ $file = @$_GET['file'] ?: 'index';
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' blob: https://geoparkinfo.alhasandev.com data: gap:; style-src * 'self' 'unsafe-inline' blob: https://geoparkinfo.alhasandev.com data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: https://geoparkinfo.alhasandev.com data: gap:; object-src * 'self' blob: https://geoparkinfo.alhasandev.com data: gap:; img-src * 'self' 'unsafe-inline' blob: https://geoparkinfo.alhasandev.com data: gap:; connect-src 'self' * 'unsafe-inline' blob: https://geoparkinfo.alhasandev.com data: gap:; frame-src * 'self' blob: https://geoparkinfo.alhasandev.com data: gap:;">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' blob: http:* data: gap:; style-src * 'self' 'unsafe-inline' blob: http:* data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: http:* data: gap:; object-src * 'self' blob: http:* data: gap:; img-src * 'self' 'unsafe-inline' blob: http:* data: gap:; connect-src 'self' * 'unsafe-inline' blob: http:* data: gap:; frame-src * 'self' blob: http:* data: gap:;">
   <title>Geopark Info - ULM Informasi Geografis</title>
   <!-- Favicon-->
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -47,6 +47,7 @@ $file = @$_GET['file'] ?: 'index';
 
   <!-- GLTF Viewer -->
   <?php if ($page === 'gltf-viewer') : ?>
+    <link rel="canonical" href="https://gltf-viewer.donmccurdy.com/">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" />
     <link rel="stylesheet" href="assets/gltf-viewer/style.e308ff8e.css" />
     <script src="assets/gltf-viewer/app.a6a4d504.js"></script>
