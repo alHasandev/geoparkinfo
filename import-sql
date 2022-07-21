@@ -6,16 +6,19 @@
 
 // Short options / -db
 $shortopts  = "";
-$shortopts  .= "d:"; // dabatase name / required
+$shortopts  .= "h:"; // dabatase host / localhost
+$shortopts  .= "u:"; // dabatase username / root
+$shortopts  .= "p:"; // dabatase password / '' (empty string)
+$shortopts  .= "d:"; // dabatase name / database
 $shortopts  .= "b:"; // backup file path / optional / use db as backup pathname
 
 
 $options    = getopt($shortopts);
 
 //ENTER THE RELEVANT INFO BELOW
-$hostname     = "localhost";
-$username     = "root";
-$password     = "root";
+$hostname     = @$options['h'] ? $options['h'] : "localhost";
+$username     = @$options['u'] ? $options['u'] : "root";
+$password     = @$options['p'] ? $options['p'] : "";
 $dbname       = @$options['d'] ? $options['d'] : "database";
 $backup_name  = @$options['b'] ? $options['b'] : "$dbname.sql";
 
@@ -81,3 +84,4 @@ echo "Successfully... All tables is imported";
 echo "\n";
 
 echo "Successfuly... database is imported!";
+echo "\n";

@@ -23,10 +23,14 @@
             <a class="dropdown-item" href="#">Cari Informasi</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="?page=gltf-viewer">
-            GLTF Viewer
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="gltf-dropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            GLTF
           </a>
+          <div class="dropdown-menu" aria-labelledby="gltf-dropdown">
+            <a class="dropdown-item" href="?page=gltf">Viewer</a>
+            <a class="dropdown-item" href="?page=gltf&file=form">Form</a>
+          </div>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="example-dropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
